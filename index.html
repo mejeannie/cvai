@@ -482,6 +482,34 @@
   .compare-label { font-size: .78rem; color: #666; margin-top: 6px; line-height: 1.5; }
   .compare-arrow { font-size: 1.6rem; color: var(--border); }
 
+  .tip-box {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-top: 12px;
+    font-size: .82rem;
+    line-height: 1.6;
+    color: #444;
+  }
+  .tip-yellow { background: #FFFDE7; border-left: 4px solid #F9A825; }
+  .tip-purple { background: var(--lavender); border-left: 4px solid var(--plum); }
+  .tip-icon { font-size: 1.3rem; margin-top: 1px; }
+  .tip-title {
+    font-weight: 700;
+    font-size: .84rem;
+    color: #222;
+    margin-bottom: 3px;
+  }
+  .tip-search {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: .76rem;
+    color: #777;
+  }
+  .tip-search strong { color: var(--plum); }
+
   /* ── ANIMATION ── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(16px); }
@@ -625,6 +653,24 @@
                 어느 칸에 입력해도 자동으로 계산됩니다.
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- 스타킹 팁 박스 -->
+        <div class="tip-box tip-yellow">
+          <div class="tip-icon">💡</div>
+          <div class="tip-content">
+            <div class="tip-title">정확도 UP 꿀팁</div>
+            측정 전 머리에 스타킹을 잘라 씌우면 머리카락이 눌리면서 두상 윤곽이 명확해져요. 특히 <strong>머리숱이 많은 아기</strong>에게 효과적이에요.
+          </div>
+        </div>
+
+        <div class="tip-box tip-purple">
+          <div class="tip-icon">🧦</div>
+          <div class="tip-content">
+            <div class="tip-title">스타킹 측정법</div>
+            발목 부분을 잘라 머리에 씌운 뒤 측정하세요. 머리카락 두께가 측정값에 영향을 주지 않아 <strong>더 정확한 두상 윤곽</strong>을 잴 수 있어요.<br>
+            <span class="tip-search">잘 모르겠다면 네이버에 <strong>'두상 스타킹 측정'</strong> 으로 검색해보세요 🔍</span>
           </div>
         </div>
 
